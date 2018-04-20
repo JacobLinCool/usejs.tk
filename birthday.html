@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="qpg.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body bgcolor="lightblue">
+		<div class="w3-center w3-margin w3-card w3-white w3-round-large">
+            <h1 id="name">Happy Birthday! </h1>
+		    <h3 id="date">Born on </h3>
+		    <h3 id="old">Today is your </h3>
+		</div>
+		<div class="w3-center w3-margin w3-card w3-white w3-round-large">
+            <h1>Pictures of you</h1>
+			<img class="w3-round-large w3-margin" id="pic1" width="60%"><br>
+			<img class="w3-round-large w3-margin" id="pic2">
+		</div>
+		<div class="w3-center w3-margin w3-card w3-white w3-round-large">
+            <h1>Blessing of friends</h1>
+			<h3 id="f1"></h3>
+			<h3 id="f2"></h3>
+			<h3 id="f3"></h3>
+		</div>
+        <script>
+            document.getElementById("name").innerHTML += urldata("name");
+            document.getElementById("date").innerHTML += urldata("date");
+            document.getElementById("old").innerHTML += urldata("old")+" years old birthday!";
+            document.getElementById("pic1").src = urldata("pic1");
+            document.getElementById("pic2").src = urldata("pic2");
+            document.getElementById("f1").innerHTML = urldata("f1").replace("%20"," ")+": "+urldata("f1b").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ");
+            document.getElementById("f2").innerHTML = urldata("f2").replace("%20"," ")+": "+urldata("f2b").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ");
+            document.getElementById("f3").innerHTML = urldata("f3").replace("%20"," ")+": "+urldata("f3b").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ").replace("%20"," ");
+        </script>
+    </body>
+</html>
