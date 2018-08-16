@@ -10,3 +10,7 @@ function urldata(key) {
     }
     return a;
 }
+function classAdd(element, names) {
+    var e = document.getElementById(element);
+    e.className += " "+names;
+}
